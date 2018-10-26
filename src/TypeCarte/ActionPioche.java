@@ -2,15 +2,16 @@ package TypeCarte;
 
 import ClasseAbstraite.Carte;
 
-public class Chiffre extends Carte {
+public class ActionPioche extends Carte {
 
-	public Chiffre(int valeur, String couleur) {
+	public ActionPioche(int valeur, String couleur) {
 		super(valeur, couleur);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void effet() {
-		
+		// TODO Auto-generated method stub
 		
 	}
 
@@ -19,5 +20,5 @@ public class Chiffre extends Carte {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
+
 }

@@ -1,4 +1,9 @@
-/Instance/
-/Main/
-/Interface/
 /ClasseAbstraite/
+/Instance/
+/Interface/
+<<<<<<< HEAD
+/ClasseAbstraite/
+=======
+/Main/
+/TypeCarte/
+>>>>>>> ca7299e55dc86371696b4c6d7c83088a73061348

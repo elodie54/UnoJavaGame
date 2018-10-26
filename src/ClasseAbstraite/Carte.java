@@ -7,5 +7,10 @@ public abstract class Carte {
 	public abstract void effet();
 	public abstract boolean playIsPossible(Carte carte);
 	
+	public Carte(int valeur, String couleur) {
+		super();
+		this.valeur = valeur;
+		this.couleur = couleur;
+	}
 	
 }

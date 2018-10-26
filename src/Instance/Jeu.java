@@ -3,6 +3,12 @@ package Instance;
 import java.util.List;
 
 import ClasseAbstraite.Carte;
+import TypeCarte.ActionChangeCouleur;
+import TypeCarte.ActionChangeTour;
+import TypeCarte.ActionPassTour;
+import TypeCarte.ActionPioche;
+import TypeCarte.ActionPiocheCouleur;
+import TypeCarte.Chiffre;
 
 public class Jeu {
 	private static final Jeu INSTANCE = new Jeu();
@@ -51,11 +57,42 @@ public class Jeu {
 			carteDisponible.add(new Chiffre((i+1)%9, "Vert"));
 		}
 		
+		carteDisponible.add(new ActionPioche(0, "Bleu"));
+		carteDisponible.add(new ActionPioche(0, "Bleu"));
+		carteDisponible.add(new ActionPioche(0, "Vert"));
+		carteDisponible.add(new ActionPioche(0, "Vert"));
+		carteDisponible.add(new ActionPioche(0, "Rouge"));
+		carteDisponible.add(new ActionPioche(0, "Rouge"));
+		carteDisponible.add(new ActionPioche(0, "Jaune"));
+		carteDisponible.add(new ActionPioche(0, "Jaune"));
+
+		carteDisponible.add(new ActionChangeTour(0, "Bleu"));
+		carteDisponible.add(new ActionChangeTour(0, "Bleu"));
+		carteDisponible.add(new ActionChangeTour(0, "Vert"));
+		carteDisponible.add(new ActionChangeTour(0, "Vert"));
+		carteDisponible.add(new ActionChangeTour(0, "Rouge"));
+		carteDisponible.add(new ActionChangeTour(0, "Rouge"));
+		carteDisponible.add(new ActionChangeTour(0, "Jaune"));
+		carteDisponible.add(new ActionChangeTour(0, "Jaune"));
 		
-
-
-
-
+		carteDisponible.add(new ActionPassTour(0, "Bleu"));
+		carteDisponible.add(new ActionPassTour(0, "Bleu"));
+		carteDisponible.add(new ActionPassTour(0, "Vert"));
+		carteDisponible.add(new ActionPassTour(0, "Vert"));
+		carteDisponible.add(new ActionPassTour(0, "Rouge"));
+		carteDisponible.add(new ActionPassTour(0, "Rouge"));
+		carteDisponible.add(new ActionPassTour(0, "Jaune"));
+		carteDisponible.add(new ActionPassTour(0, "Jaune"));
+		
+		carteDisponible.add(new ActionChangeCouleur(0, "Noir"));
+		carteDisponible.add(new ActionChangeCouleur(0, "Noir"));
+		carteDisponible.add(new ActionChangeCouleur(0, "Noir"));
+		carteDisponible.add(new ActionChangeCouleur(0, "Noir"));
+		
+		carteDisponible.add(new ActionPiocheCouleur(0, "Noir"));
+		carteDisponible.add(new ActionPiocheCouleur(0, "Noir"));
+		carteDisponible.add(new ActionPiocheCouleur(0, "Noir"));
+		carteDisponible.add(new ActionPiocheCouleur(0, "Noir"));
 	}
 
 	public Carte distribuer() {

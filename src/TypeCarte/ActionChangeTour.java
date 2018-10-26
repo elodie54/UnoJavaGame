@@ -2,9 +2,9 @@ package TypeCarte;
 
 import ClasseAbstraite.Carte;
 
-public class ActionchangeTour extends Carte {
+public class ActionChangeTour extends Carte {
 
-	public ActionchangeTour(int valeur, String couleur) {
+	public ActionChangeTour(int valeur, String couleur) {
 		super(valeur, couleur);
 	}
 
